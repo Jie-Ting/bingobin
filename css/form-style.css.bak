@@ -1,0 +1,139 @@
+@charset "UTF-8";
+	:root{
+		--btn-red: #FF6857;
+		--hover-blue:#97BAFF;
+		--bluegray:#A6AEB9;
+		--bg-white:#DDDDDD;
+		/*商品、購物車*/
+		--main-color: #fd4646;
+		--text-color: #171427;
+		--bg-color: #fff;
+	}
+	body{
+		height:100%;
+		width:90%;
+		margin:0 auto;
+		text-align:center;
+		background-color:var(--bg-white);	
+		}
+		
+	/*ul*/
+		ul{ /* 取消ul預設的內縮及樣式 */
+			padding:0;
+			list-style: none;
+		}
+		
+		/*top menu*/
+		ul.top-menu { /*把文字設定為行內元素*/
+			background-color:var(--bg-white);
+			width:90%;
+			display: inline-block;
+			margin-top:0px;
+			margin-right:35px;
+			padding-top:20px;
+			z-index:2;
+		}
+		ul.top-menu > li {
+			float:right; /*靠右對齊*/
+		}
+		ul.top-menu a { /*設定框內的文字、條件*/
+			display: block;
+			text-decoration: none;
+		}
+		ul.top-menu img:hover { /* 滑鼠滑入*/
+			transform:scale(1.2)
+		}
+		#top-menu{ /*保持在畫面上方*/
+			position:fixed;
+			top:0px;
+			right:0px;
+		}
+		.small { /*top-menu圖片大小*/
+			width:40px;
+			margin:auto;
+			padding:10px;
+		}
+		.search{
+            width:300px;
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+			margin-top:6px;
+        }
+		.search input{
+			width:300px;
+			height: 50px;
+			background:var(--bg-white);
+			font-size: 12pt;
+			float: right;
+			padding-left:10px;
+			border: 3px solid #3D1101;
+			border-radius:12px;
+		}
+		#btn-search{
+			position:absolute;
+			border:none;
+			background:#D3D3D3;
+			top: 6px;
+			right:10px;
+		}
+		.search img{
+			width:38px;
+			position: absolute;
+			right:10px;
+
+		}
+		
+		/*left menu*/
+		ul.left-menu { /*把文字設定為行內元素、改變字體*/
+			padding-top:10px;
+			display: inline-block;
+			font-family: sans-serif, cursive;
+			font-size: 28px;
+			z-index:3;
+		}
+		#left-menu{  /*保持在畫面左方*/
+			position:fixed;
+			margin-top:-65px;
+			left:35px;
+			width:200px;
+			height:90%;
+			background-color: var(--bluegray); 
+			opacity: 0.8;
+		}
+		ul.left-menu a { /*設定框內的文字、條件*/
+			color: var(--text-color);
+			text-decoration: none;
+			display: block;
+			padding: 0 20px;
+			line-height:50px;
+		}
+		ul.left-menu a:hover { /* 滑鼠滑入按鈕變色*/
+			background-color: var(--hover-blue);
+		}
+		ul.left-menu a:active{ /* 滑鼠滑入按鈕變色*/
+			background-color: var(--hover-blue);
+		}
+		
+		
+	.contact{
+		margin:100px auto;
+		text-align:;
+		}
+	.contact div{
+		font-size: 18px;
+		margin-bottom:8px;
+	}
+	.enter {
+		text-align:center;
+	}
+	.contact input {
+			width:200px;
+			background:var(--bg-white);
+			font-size: 12pt;
+			padding:8px;
+			border: 1px solid #3D1101;
+			border-radius:12px;
+		}
+	..contact input
+	

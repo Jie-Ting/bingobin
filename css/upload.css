@@ -1,0 +1,154 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.inputFile{
+    display: none;
+}
+.fileText{
+margin-bottom: 10px;
+}
+
+bb{
+    padding: 20px 25px;
+    background: rgb(12, 70, 179);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bar{
+    height: 50px;
+    width: 500px;
+    background: #80808073;
+    margin-bottom: 50px;
+    display:none;
+}
+.progress{
+    background: linear-gradient(12deg,red,blue);
+    height: 100%;
+    width: 0%;
+    display:none;
+}
+.uploadPercentage{
+    font-size: 25px;
+	display:none;
+    
+}
+.imgs{
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    border: 5px solid cornflowerblue;
+	display:none;
+}
+.imageUploaded{
+    margin-top: 10px;
+	display:none;
+}
+
+
+.drop-zone {
+	  max-width: 400px;
+	  height: 450px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  text-align: center;
+	  font-family: "Quicksand", sans-serif;
+	  font-weight: 500;
+	  font-size: 24px;
+	  cursor: pointer;
+	  color: #cccccc;
+	  border: 4px dashed #cccccc;
+	  border-radius: 10px;
+	  position:relative;
+	  top:-500px;
+	  left:200px;
+	}
+
+
+	.drop-zone__input {
+	  display:none;
+	}
+	.drop-zone__thumb {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  overflow: hidden;
+	  background-color: #cccccc;
+	  background-size: cover;
+	  position: relative;
+	}
+
+	.drop-zone__thumb:after {
+	  content: attr(data-label); /*顯示圖片名稱*/
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  color: #ffffff;
+	  background: rgba(0, 0, 0, 0.75);
+	  font-size: 14px;
+	  text-align: center;
+	}
+	input,textarea{ /*改變回答框*/
+		border-bottom:3px solid #34495E;
+		border-radius:5px;
+		width:300px;
+		padding:5px;
+	}
+	input:hover { /*當滑鼠移入*/
+		background-color: #ffffff;
+		border: 3px solid #F1C40F;
+		cursor: pointer;
+	}
+
+	input:active { /*滑鼠按下*/
+		background-color: #B2BABB ;
+	}
+
+	input:focus { /*滑鼠點下後-焦點*/
+ 	 	background-color: #EBDEF0 ;
+	}
+	.allupload{
+		display:flex;
+		position:relative;
+		flex-direction:column;
+		width:90%;	
+	}
+	.allupload h1{
+		margin-top:140px;
+		border-bottom: 3px solid ;
+		text-align:left;
+		margin-left:200px;
+		width:200px
+	}
+
+	#btn{
+		margin-top:50px;
+		width:100px
+	}
+	.box {
+		margin-left:400px;
+		width:800px;
+	}
+	.box p{
+		font-size: 20px;
+		text-align:left;
+		margin-left:245px;
+	}
+
+	#upImage{
+		height: 600px;
+		width: auto;
+	}
+	.pic{
+	    height: 600px;
+		width: auto;
+	}
+		

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body{
+	height:100%;
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+	background-color: #D3D3D3
+}
+		/*ul*/
+		ul{ /* 取消ul預設的內縮及樣式 */
+			padding:0;
+			list-style: none;
+		}
+		
+		/*top menu*/
+		ul.top-menu { /*把文字設定為行內元素*/
+			background-color: #D3D3D3;
+			width:90%;
+			display: inline-block;
+			margin-top:0px;
+			margin-right:35px;
+			padding-top:20px;
+			z-index:2;
+		}
+		ul.top-menu > li {
+			float:right; /*靠右對齊*/
+		}
+		ul.top-menu a { /*設定框內的文字、條件*/
+			display: block;
+			text-decoration: none;
+		}
+		ul.top-menu img:hover { /* 滑鼠滑入*/
+			transform:scale(1.2)
+		}
+		#top-menu{ /*保持在畫面上方*/
+			position:fixed;
+			top:0px;
+			right:0px;
+		}
+		.small { /*top-menu圖片大小*/
+			width:40px;
+			margin:auto;
+			padding:10px;
+		}
+		.search{
+            width:300px;
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+			margin-top:6px;
+        }
+		.search input{
+			width:300px;
+			height: 50px;
+			background: #D3D3D3;
+			border: none;
+			font-size: 12pt;
+			float: right;
+			padding-left:10px;
+			border: 3px solid #3D1101;
+			border-radius:12px;
+		}
+		#btn-search{
+			position:absolute;
+			border:none;
+			background:#D3D3D3;
+			top: 6px;
+			right:10px;
+		}
+		.search img{
+			width:38px;
+			position: absolute;
+			right:10px;
+
+		}
+		
+		/*left menu*/
+		ul.left-menu { /*把文字設定為行內元素、改變字體*/
+			padding-top:10px;
+			display: inline-block;
+			font-family: sans-serif, cursive;
+			font-size: 28px;
+			z-index:3;
+		}
+		#left-menu{  /*保持在畫面左方*/
+			position:fixed;
+			left:35px;
+			width:200px;
+			height:90%;
+			background-color:#fff; opacity: 0.8;
+		}
+
+		ul.left-menu a { /*設定框內的文字、條件*/
+			color: #333;
+			display: block;
+			padding: 0 20px;
+			text-decoration: none;
+			line-height:50px;
+		}
+		ul.left-menu a:hover { /* 滑鼠滑入按鈕變色*/
+			background-color: pink;
+		}
+		ul.left-menu a:active{ /* 滑鼠滑入按鈕變色*/
+			background-color: pink;
+		}
+		
+.sellbox{
+	display:flex;
+	justify-content:space-evenly; 
+	margin-top:50px;
+}
+.imgbox{
+	border:#fff 3px solid;
+}
+.img input{
+	display:flex;
+	flex-direction:colum;
+}
+.imgbox img{
+	display:flex;
+	flex-direction:colum;
+	width:500px;
+	height:600px;
+}
+.contentbox input{
+	margin-bottom:20px;
+	width:400px;
+	height:30px;
+}

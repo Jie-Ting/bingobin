@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+	height:100%;
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+	background-color: #D3D3D3
+}
+
+.sellbox{
+	display:flex;
+	justify-content:space-evenly; 
+	margin-top:50px;
+}
+.imgbox{
+	border:#fff 3px solid;
+}
+.img input{
+	display:flex;
+	flex-direction:colum;
+}
+.imgbox img{
+	display:flex;
+	flex-direction:colum;
+	width:500px;
+	height:600px;
+}
+.contentbox input{
+	margin-bottom:20px;
+	width:400px;
+	height:30px;
+}
