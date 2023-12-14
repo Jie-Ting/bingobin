@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO併</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--上導覽列-->
+	<ul class="top-menu" id="top-menu">
+		<div><a href="index.html"><img class="logo" id="" src="img/logo.png"/></div>
+	    <li><a href="user.html"><img class="small" src="img/user.png"/></a>
+        </li>
+		<li><a href="like.html"><img class="small" src="img/like.png"/></a>
+        </li>
+		<li>
+			<img class="small" id="cart-icon" src="img/shopping-cart.png"/>
+			<div class="cart">
+                <h2 class="cart-title">購物車</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">總價</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">前往結帳</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+			</div>
+        </li>
+        <li>
+			<div class="search">
+				<input type="search" id="search" placeholder="Search..."/>
+				<button id="btn-search">
+					<img id="" src="img/magnifier.png"/>
+				</button>
+			</div>
+        </li>
+	</ul>
+	<!--左側選單-->
+	<ul class="left-menu" id="left-menu">
+        <li><a href="#all">All</a>
+        </li>
+        <li><a href="#new">News</a>
+        </li>
+        <li><a href="upload.html">Sell</a>
+        </li>
+		<li><a href="history.html">History</a>
+        </li>
+        <li><a href="form.html">Contact us</a>
+        </li>
+	</ul>
+	<div class="content">
+		<div id="content1">
+			<img id="image" src="img/image1.jpg"/>
+		</div>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title" id="all">所有商品</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <a href="page.html"><img src="img/product1.jpg" alt="" class="product-img"></a>
+                <h2 class="product-title">記憶棉坐墊</h2>
+				<select class="color">
+					<option>請選擇顏色</option>
+					<option value="銀月灰">銀月灰</option>
+					<option value="米白色">米白色</option>
+					<option value="朱砂紅">朱砂紅</option>
+					<option value="靛藍色">靛藍色</option>
+					<option value="咖啡色">咖啡色</option>
+					<option value="深灰色">深灰色</option>
+				</select>
+				<br />
+				<br />
+				<span class="price">$200</span>
+				<i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="img/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">筋膜槍</h2>
+				<select class="color">>
+					<option>請選擇顏色</option>
+					<option> 黑色</option>
+				</select>
+				</br>
+				</br>
+                <span class="price">$500</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="img/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">忍者桌面垃圾桶</h2>
+
+				<select class="color">>
+					<option>請選擇顏色</option>
+					<option value="綠色">綠色</option>
+					<option value="粉色">粉色</option>
+					<option value="黃色">黃色</option>
+					<option value="白色">白色</option>
+				</select>
+				<br />
+				<br />
+                <span class="price">$90</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="img/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">帆布後背包</h2>
+				<select class="color">>
+					<option>請選擇顏色</option>
+					<option value="黑色">黑色</option>
+					<option value="米白色">米白色</option>
+					<option value="薑黃色">薑黃色</option>
+					<option value="米色">米色</option>
+				</select>
+				<br />
+				<br />
+				<span class="price">$350</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="img/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">文藝小櫃子</h2>
+				<select class="color">>
+					<option>請選擇品項</option>
+					<option>木頭紋</option>
+				</select>
+				</br>
+				</br>
+                <span class="price">$150</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="img/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">襯衫背心(可單買)</h2>
+				<select class="color">>
+					<option>請選擇品項</option>
+					<option>襯衫</option>
+					<option>背心</option>
+					<option>襯衫+背心</option>
+				</select>
+				<br />
+				<br />
+				<span class="price">$250</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="img/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">手機螢幕保護膜</h2>
+				<select class="color">>
+					<option>請選擇品項</option>
+					<option>iPhone13</option>
+				</select>
+				</br>
+				</br>
+                <span class="price">$70</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="img/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">德恩奈漱口水</h2>
+				<select class="color">>
+					<option>請選擇品項</option>
+					<option>薄荷味</option>
+				</select>
+				</br>
+				</br>
+                <span class="price">$70</span>
+				<br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+		<div id="content3">
+		<h2 id="new">新上架NEW</h2>
+		</div>
+	</div>
+    <!-- Link TO JS -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
+

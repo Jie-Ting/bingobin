@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>bingo併</title>
+</head>
+<ul class="top-menu" id="top-menu">
+		<div><a href="index.html"><img class="logo" id="" src="img/logo.png"/></div>
+	    <li><a href="user.html"><img class="small" src="img/user.png"/></a>
+        </li>
+		<li><a href="like.html"><img class="small" src="img/like.png"/></a>
+        </li>
+		<li>
+			<img class="small" id="cart-icon" src="img/shopping-cart.png"/>
+			<div class="cart">
+                <h2 class="cart-title">購物車</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">總價</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">前往結帳</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+			</div>
+        </li>
+        <li>
+			<div class="search">
+				<input type="search" id="search" placeholder="Search..."/>
+				<button id="btn-search">
+					<img id="" src="img/magnifier.png"/>
+				</button>
+			</div>
+        </li>
+	</ul>
+	<div class="login_page">
+		<div class="login-container">
+			<h2>會員登入</h2>
+            <p>Log in with your data that you entered <br>during your registration</p>
+				<div id='result'></div>
+				<div class="form">
+					<div >帳號: </div>
+					<input id='account' type='text' required>
+					<div >密碼:</div>
+					<input id='password' type='password' required>
+					<button class="btn" id='login' >登入</button>
+					<a href="#" class="forget">Forget Password?</a>
+					<a href="signup.html" class="btn-1" >註冊</a>
+				</div>
+		</div>	
+		<div class="login-img">
+			<img id="" src="img/welcome.jpg"/>
+		</div>
+	</div>
+<script>
+	const loginButton = document.getElementById('login');
+	const accountInput = document.getElementById('account');
+	const passwordInput = document.getElementById('password');
+	const resultOutput = document.getElementById('result');
+	function login() {
+		resultOutput.style.color = '#00f'
+		resultOutput.innerText = 'Login..'
+		setTimeout(function(e){
+			const accountValue = accountInput.value;
+			const passwordValue = passwordInput.value;
+			if (accountValue == 's11055015' && passwordValue == 's11055015') {
+				document.location.href="user1.html";
+			}		
+			else{
+			resultOutput.style.color = '#f00';
+			resultOutput.innerText = '請檢查帳號密碼是否正確';
+			}
+		}, 2000)
+	}
+	loginButton.addEventListener('click', login)
+</script>
+</body>
+</html>

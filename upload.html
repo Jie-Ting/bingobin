@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sell</title>
+    <link rel="stylesheet" href="css/upload.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	
+	
+	</style>
+  </head>
+  <body>
+  <ul class="top-menu" id="top-menu">
+		<div><a href="index.html"><img class="logo" id="" src="img/logo.png"/></div>
+	    <li><a href="user.html"><img class="small" src="img/user.png"/></a>
+        </li>
+		<li><a href="like.html"><img class="small" src="img/like.png"/></a>
+        </li>
+		<li>
+			<img class="small" id="cart-icon" src="img/shopping-cart.png"/>
+			<div class="cart">
+                <h2 class="cart-title">購物車</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">總價</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">前往結帳</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+			</div>
+        </li>
+        <li>
+			<div class="search">
+				<input type="search" id="search" placeholder="Search..."/>
+				<button id="btn-search">
+					<img id="" src="img/magnifier.png"/>
+				</button>
+			</div>
+        </li>
+	</ul>
+	<!--左側選單-->
+	<ul class="left-menu" id="left-menu">
+        <li><a href="index.html#all">All</a>
+        </li>
+        <li><a href="index.html#new">News</a>
+        </li>
+        <li><a href="upload2.html">Sell</a>
+        </li>
+		<li><a href="history.html">History</a>
+        </li>
+        <li><a href="form.html">Contact us</a>
+        </li>
+	</ul>
+	<div class = "allupload">
+	<h1 id="topic">我要併單!</h1>
+		<form class="upload" action="#">
+			<div class="box">
+				<p>商品名稱</p>
+				<input type="text" id="title" size="20" required="required"/>
+				</br>
+				<p>價格</p>
+				<input type="text" id="price" size="10" required="required"/>
+				</br>
+				<p>商品介紹</p>
+				<textarea id="intro" rows="3" required="required"></textarea>
+				</br>
+				<p>商品連結/產品出產地</p>
+				<textarea id="link" rows="3"></textarea>
+				</br>
+				<button class="btn" id ="btn">發布</button>
+			</div>	
+		</form>
+	
+	<label for="fileInp"><div class="drop-zone">
+	<span class="drop-zone__prompt">將文件拖放到此處或單擊上傳</span>
+	<input 
+	type="file" 
+	name="myFile" 
+	class="drop-zone__input"
+	id="fileInp"
+    accept="image/png, image/jpeg"
+	 />
+	</div></label>
+    <span class="fileText"></span>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+    <div class="uploadPercentage">0%</div>
+	<div class="imageUploaded">
+	<img alt="" class="imgs" />
+	</div>
+
+	<h2>這是範例</h2>
+	<div class="list" id="list">
+		<div class="article">
+			<h2>記憶眠坐墊</h2>
+			<p>這是一款兼具舒適與美觀的坐墊!真的超級推薦，我們宿舍一人一個!</br>
+			   歡迎來337試坐~</p>
+			<span>$200</span>
+			<a href="https://detail.tmall.com/item_o.htm?abbucket=14&id=652118715282&ns=1&spm=a230r.1.14.1.60557b1e8CH4J6">
+					🔗淘寶連結</a>
+			<a href="index.html" class="book-now btn">立即購買</a>
+			</br>
+			<img class="pic" src="img/product1.jpg" alt="">
+			
+    </div>
+		</div>
+	</div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+	 <script src="js/upload.js"></script>
+  </body>
+</html>

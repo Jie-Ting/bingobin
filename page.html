@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bingo併</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+	<style>
+	#myProgress {
+		position: relative;
+		width: 50%;
+		height: 30px;
+		background-color: #ddd;
+	}
+
+	#myBar {
+		position: absolute;
+		width: 10%;
+		height: 100%;
+		background-color: #4CAF50;
+	}
+
+	#label {
+		text-align: center;
+		line-height: 30px;
+		color: white;
+	}
+	</style>
+
+		
+</head>
+<body>
+	<ul id="back">
+	<li><a href="index.html">回上一頁</a></li>
+	</ul>
+
+	 <!-- Swiper -->
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/product1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/01-1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="img/01-2.jpg" alt=""></div>
+		</div>
+		
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+	</div>
+	<section class="box-data">		
+		<div>
+		<h2 class="heading">商品頁面</h2>
+			<h2>記憶棉坐墊</h2>
+				<p>
+					這是一款兼具舒適與美觀的坐墊!真的超級推薦，我們宿舍一人一個!</br>
+					歡迎來337試坐~
+				</p>
+				<div class="package">
+					<div class="p-box">
+					<span>$200</span>
+					</div>
+					<a href="https://detail.tmall.com/item_o.htm?abbucket=14&id=652118715282&ns=1&spm=a230r.1.14.1.60557b1e8CH4J6">
+					🔗淘寶連結</a>
+					<!-- Btn -->
+					<button id="bb" class="book-now btn">立即購買</button>
+					<div id="myProgress">
+					  <div id="myBar">
+						<div id="label">10%</div>
+					  </div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+	var width = 10;
+	var btn=document.getElementById("bb");
+	btn.addEventListener("click",()=> { 
+    var elem = document.getElementById("myBar");
+        if (width >= 100) {
+            alert("達到目標了!");
+        } else {
+            document.getElementById("label").innerHTML = width + 10 + '%';
+			elem.style.width = width + 10 + '%';
+			width +=10;
+        }
+    })
+    </script>
+  
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

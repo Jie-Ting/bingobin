@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>bingo併</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--上導覽列-->
+	<ul class="top-menu" id="top-menu">
+		<div><a href="index.html"><img class="logo" id="" src="img/logo.png"/></div>
+	    <li><a href="user.html"><img class="small" src="img/user.png"/></a>
+        </li>
+		<li><a href="like.html"><img class="small" src="img/like.png"/></a>
+        </li>
+		<li>
+			<img class="small" id="cart-icon" src="img/shopping-cart.png"/>
+			<div class="cart">
+                <h2 class="cart-title">購物車</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">總價</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">前往結帳</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+			</div>
+        </li>
+        <li>
+			<div class="search">
+				<input type="search" id="search" placeholder="Search..."/>
+				<button id="btn-search">
+					<img id="" src="img/magnifier.png"/>
+				</button>
+			</div>
+        </li>
+	</ul>
+	<!--左側選單-->
+	<ul class="left-menu" id="left-menu">
+        <li><a href="#all">All</a>
+        </li>
+        <li><a href="#new">News</a>
+        </li>
+        <li><a href="sell.html">Sell</a>
+        </li>
+		<li><a href="history.html">History</a>
+        </li>
+        <li><a href="form.html">Contact us</a>
+        </li>
+	</ul>
+	
+	<div class = "sellbox">
+		<div class = "imgbox">
+			<form action="/somewhere/to/upload" enctype="multipart/form-data">
+				<input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png"/ >
+				<img id="preview_progressbarTW_img" src="#" />
+			</form>
+		</div>
+		<div class ="contentbox">
+			<div>商品名稱：
+				<input type="product" id="product" placeholder=""/>
+			</div>
+			<div>商品敘述：
+				<input type="" id="" placeholder=""/>
+			</div>
+		</div>
+	</div>
+
+	
+<script>
+function readURL(input){
+
+  if(input.files && input.files[0]){
+
+    var imageTagID = input.getAttribute("targetID");
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+
+       var img = document.getElementById(imageTagID);
+
+       img.setAttribute("src", e.target.result)
+
+    }
+
+    reader.readAsDataURL(input.files[0]);
+
+  }
+
+}
+</script>
+</body>

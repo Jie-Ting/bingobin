@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>bingo併</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--上導覽列-->
+	<ul class="top-menu" id="top-menu">
+		<div><a href="index.html"><img class="logo" id="" src="img/logo.png"/></div>
+	    <li><a href="user.html"><img class="small" src="img/user.png"/></a>
+        </li>
+		<li><a href="like.html"><img class="small" src="img/like.png"/></a>
+        </li>
+		<li>
+			<img class="small" id="cart-icon" src="img/shopping-cart.png"/>
+			<div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+			</div>
+        </li>
+        <li>
+			<div class="search">
+				<input type="search" id="search" placeholder="Search..."/>
+				<button id="btn-search">
+					<img id="" src="img/magnifier.png"/>
+				</button>
+			</div>
+        </li>
+	</ul>
+	<!--左側選單-->
+	<ul class="left-menu" id="left-menu">
+        <li><a href="index.html#all">All</a>
+        </li>
+        <li><a href="index.html#all#new">News</a>
+        </li>
+        <li><a href="upload.html">Sell</a>
+        </li>
+		<li><a href="">History</a>
+        </li>
+        <li><a href="form.html">Contact us</a>
+        </li>
+	</ul>
+	<div class="contact">
+		<h1>聯絡我們 Contact Us</h1>
+		<form enctype="text/plain" accept-charset="utf-8" >
+			<div>
+				<label for="fullname" class="">姓名 Name：</label>
+				<input id="nameText" type="text" name="fullname" value size="60"  placeholder="請輸入姓名" required />
+			</div>
+			<div>
+				<label for="tel" class="">手機 Phone：</label>
+				<input id="telText"  type="text" id="tel" name="tel" required="required" value size="60" aria-invalid="false" placeholder="請輸入手機號碼.." />
+			</div>
+			<div>
+				<label for="email" class="">郵件 Email：</label>
+				<input id="emailText" type="text" name="email" id="email" value size="60" required="required" placeholder="請輸入電子郵件地址" />
+			</div>
+			<div>
+				<label for="title" class="">主旨 Subject：</label>
+				<input  id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="主旨" required>
+			</div>
+			<div>
+				<label for="comment">請留下您的寶貴意見</label>
+				<br>
+				<textarea name="comment" id="bodyText" rows="10" cols="40" aria-required="true" aria-invalid="false"></textarea>
+			</div>	
+			<div class="enter">
+				<input type="submit" value="確定送出" id="enter" onclick="submitHandler()"/>
+				<a id="mailTo"></a>
+			</div>
+		</form>
+    </div>
+	
+<script src="js/main.js"></script>
+</body>
+</html>

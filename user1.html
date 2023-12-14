@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="css/user-style.css">
+	<title>bingo併</title>
+</head>
+<body>
+	<div class="">
+		<div id="" class="">
+			<div id="">每日簽到</div>
+			<div id="">已連續<div></div>天</div>
+			<button id="">簽到</button>
+		</div>
+		<div id="" class="">訂單查詢</div>
+		<div id="" class="">會員資料</div>		
+	</div>
+	
+	<script language="javascript">
+	　function difference(date1, date2) {  
+	  const date1utc = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());
+	  const date2utc = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());
+		day = 1000*60*60*24;
+	  return(date2utc - date1utc)/day
+	}
+
+	const date1 = new Date("2020-12-10"),
+		  date2 = new Date("2020-12-11"),
+		  time_difference = difference(date1,date2)
+
+	console.log(time_difference)
+　	document.write("連續 "+ time_difference + "天" );
+	</script>
+</body>
+</html>
